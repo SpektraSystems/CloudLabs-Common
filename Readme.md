@@ -1,3 +1,5 @@
+# Leverage automated machine learning to quickstart your model building process
+
 ## Getting Started
 
 ### Sign in to the Azure portal
