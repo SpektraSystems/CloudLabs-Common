@@ -10,19 +10,19 @@
 
 4.On Stay signed in pop-up window, click **No**.
 
-   ![](images/fpage.png)
+   ![](Images/fpage.png)
    
 5.You may encounter a popup entitled **Welcome to Microsoft Azure** with buttons for **Start Tour** and **Maybe Later** - Choose **Maybe Later**.
 
-   ![](images/fpage1.png)
+   ![](Images/fpage1.png)
 
 6.Click on **Resource Groups** icon in the portal.
 
-   ![](images/rgview.png)
+   ![](Images/rgview.png)
    
 7.Then select RG **odl-aml-xxx** to review the pre-created resource groups for you to use in the lab. 
    
-   ![](images/resources.png)
+   ![](Images/resources.png)
 
 8.Click **Next** on the bottom right of this page.
 
