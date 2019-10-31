@@ -16,7 +16,7 @@
 
 6.Then close the **Welcome to Azure Machine Learning** block.
 
-7.Now you are on the hoempage of Azure Machine Learning portal.
+7.Now you are on the homepage of Azure Machine Learning portal.
 
  ![](Images/aml2.png)
 
