@@ -8,7 +8,7 @@
 
 3.In next step, use **<inject key="AzureAdUserPassword"></inject>** as **Password**  and Click **Sign In**
 
-4.Now on the **Welcome** page. Leave the directory as default, select your **Subscription** and **AML Workspace**.
+4.Now on the **Welcome** page. Leave the directory as default, select your **Subscription** and **AML Workspace**. 
 
  ![](Images/aml1.png)
 
