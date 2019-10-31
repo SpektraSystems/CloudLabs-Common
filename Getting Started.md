@@ -10,13 +10,13 @@
 
 4.Now on the **Welcome** page. Leave the directory as default, select your **Subscription** and **AML Workspace**.
 
-![](Images/aml1.png)
+ ![](Images/aml1.png)
 
 5.Then close the **Welcome to Azure Machine Learning** block.
 
 6.Now you are on the hoempage of Azure Machine Learning portal.
 
-![](Images/aml2.png)
+ ![](Images/aml2.png)
 
 7.Click **Next** on the bottom right of this page.
 
