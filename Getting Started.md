@@ -12,7 +12,7 @@
 
 ![](Images/aml1.png)
 
-5.Then close the ***Welcome to Azure Machine Learning** block.
+5.Then close the **Welcome to Azure Machine Learning** block.
 
 6.Now you are on the hoempage of Azure Machine Learning portal.
 
