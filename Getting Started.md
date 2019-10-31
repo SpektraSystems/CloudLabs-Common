@@ -10,7 +10,7 @@
 
 4.On Stay signed in pop-up window, click **No**.
 
-5.Now on the **Welcome** page. Leave the directory as default, select your **Subscription** and **AML Workspace**. 
+5.Now on the **Welcome** page. Leave the directory as default, select your **Subscription** and **AML Workspace** and click on **Get Started**.
 
  ![](Images/aml1.png)
 
