@@ -28,28 +28,20 @@
       },
       "vmAdminPassword": {
         "type": "securestring"
-      },
-      "EnableCloudLabsConnect": {
-        "type": "string",
-        "allowedvalues": [
-          "yes",
-          "no"
-        ],
-        "defaultValue": "yes"
       }
     },
     "variables": {
-      "virtualNetworkName": "[concat('SophosLab-vNet-', parameters('DID'))]",
-      "virtualMachineName": "[concat('SophosLab-', parameters('DID'))]",
+      "virtualNetworkName": "[concat('Lab-vNet-', parameters('DID'))]",
+      "virtualMachineName": "[concat('Lab-', parameters('DID'))]",
       "networkInterfaceName": "[concat(variables('virtualMachineName'), '-nic')]",
       "networkSecurityGroupName": "[concat(variables('virtualMachineName'), '-nsg')]",
       "publicIpAddressName": "[concat(variables('virtualMachineName'), '-pip')]",
-      "publicIpAddressDNSName": "[concat('sophoslab-', parameters('DID'))]",
+      "publicIpAddressDNSName": "[concat('Lab-', parameters('DID'))]",
       "subnetName": "default",
       "location": "[resourceGroup().location]",
       "imageVersionId": "[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/Shared-Image-Gallery-TestRG/providers/Microsoft.Compute/galleries/', parameters('imageversion'))]",
       "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets/',variables('virtualNetworkName'), variables('subnetName'))]",
-      "osdiskname": "[concat('SophosLab-OSDisk-', parameters('DID'))]"
+      "osdiskname": "[concat('Lab-OSDisk-', parameters('DID'))]"
     },
     "resources": [
       {
@@ -189,31 +181,7 @@
                 }
               ]
             }
-         },
-    
-          "resources": [
-            {
-              "type": "extensions",
-              "name": "CustomScriptExtension",
-              "apiVersion": "2017-03-30",
-              "location": "[variables('location')]",
-              "dependsOn": [
-                "[variables('virtualMachineName')]"
-              ],
-              "properties": {
-                "publisher": "Microsoft.Compute",
-                "type": "CustomScriptExtension",
-                "typeHandlerVersion": "1.8",
-                "autoUpgradeMinorVersion": true,
-                "settings": {
-                  "fileUris": [
-                    "https://sophoslabstemplate.blob.core.windows.net/psscripts/psscript.ps1"
-                  ],
-                  "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File psscript.ps1',' ', parameters('vmAdminPassword'))]"
-                }
-              }
-            }
-          ]
+         }
         }
     ],
     "outputs": {
