@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "DID": {
-      "value": "Unique-Identifier for Deployment"
+      "value": "changeme-Unique-Identifier for Deployment"
     },
     "virtualMachineSize": {
       "value": "Standard_D8s_v3"
