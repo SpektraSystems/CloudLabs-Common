@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "DID": {
+      "value": "Unique-Identifier for Deployment"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_D8s_v3"
+    },
+    "imageversion": {
+      "value": "My_image_gallery/images/image_definitionn/versions/0.0.1"
+    },
+    "diskSizeGB": {
+      "value": "256"
+    },
+    "diskType": {
+      "value": "StandardSSD_LRS"
+    },
+    "diskTier": {
+      "value": "Standard"
+    },
+    "publicIpAddressType": {
+      "value": "Dynamic"
+    },
+    "vmAdminUserName": {
+      "value": "labuser"
+    },
+    "vmAdminPassword": {
+      "value": "changeme"
+    }
+  }
+}
